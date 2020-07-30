@@ -1,0 +1,145 @@
+let rs = require('readline-sync')
+let pessoa1 = {
+    nome: "Pedro",
+    nasc: '21/09/1994'
+}
+let pessoa2 = {
+    nome: "Ítalo",
+    nasc: '17/06/1997'
+}
+function idade(pessoa) {
+    let diaNasc = parseInt(pessoa.nasc.substring(0, 2)),
+        mesNasc = parseInt(pessoa.nasc.substring(3, 5)),
+        anoNasc = parseInt(pessoa.nasc.substring(6, 10)),
+        diaAtual = 21,
+        mesAtual = 7,
+        anoAtual = 2020
+    if (mesNasc > mesAtual) {
+        return anoAtual - anoNasc - 1
+    }
+    else {
+        if (mesNasc < mesAtual) {
+            return anoAtual - anoNasc
+        }
+        else
+            if (mesNasc == mesAtual && diaNasc > diaAtual) {
+                return anoAtual - anoNasc - 1
+            }
+            else
+                return anoAtual - anoNasc
+    }
+}
+let idadePessoa1 = idade(pessoa1);
+let idadePessoa2 = idade(pessoa2);
+if (idadePessoa1 > idadePessoa2) {
+    console.log(pessoa1.nome + " é mais velho que " + pessoa2.nome)
+}
+else {
+    if (idadePessoa1 < idadePessoa2) {
+        console.log(pessoa2.nome + " é mais velho que " + pessoa1.nome)
+    }
+    else {
+        console.log(pessoa1.nome + " tem a mesma idade que " + pessoa2.nome)
+    }
+}
+8:39
+let rs = require('readline-sync')
+const diaAtual = 21
+const mesAtual = 7
+const anoAtual = 2020
+class Pessoa {
+  constructor(nome, nasc) {
+    this.nome = nome,
+    this.nasc = nasc
+  }
+  getIdade() {
+    let diaNasc = parseInt(this.nasc.substring(0, 2)),
+      mesNasc = parseInt(this.nasc.substring(3, 5)),
+      anoNasc = parseInt(this.nasc.substring(6, 10))
+    if (mesNasc > mesAtual) {
+      return anoAtual - anoNasc - 1
+    }
+    else {
+      if (mesNasc < mesAtual) {
+        return anoAtual - anoNasc
+      }
+      else
+        if (mesNasc == mesAtual && diaNasc > diaAtual) {
+          return anoAtual - anoNasc - 1
+        }
+        else
+          return anoAtual - anoNasc
+    }
+  }
+}
+let pessoa1 = new Pessoa("Pedro", '21/09/1994')
+let pessoa2 = new Pessoa("Ítalo", '17/06/1997')
+let idadePessoa1 = pessoa1.getIdade();
+let idadePessoa2 = pessoa2.getIdade();
+function compararIdade() {
+  if (idadePessoa1 > idadePessoa2) {
+    console.log(pessoa1.nome + " é mais velho que " + pessoa2.nome)
+  }
+  else {
+    if (idadePessoa1 < idadePessoa2) {
+      console.log(pessoa2.nome + " é mais velho que " + pessoa1.nome)
+    }
+    else {
+      console.log(pessoa1.nome + " tem a mesma idade que " + pessoa2.nome)
+    }
+  }
+}
+compararIdade()
+8:39
+Script 4:
+8:39
+const Pessoa = require('./pessoa')
+let rs = require('readline-sync')
+let pessoa1 = new Pessoa('Pedro', '21/09/1994')
+let pessoa2 = new Pessoa("Ítalo", '17/06/1997')
+let idadePessoa1 = pessoa1.getIdade();
+let idadePessoa2 = pessoa2.getIdade();
+if (idadePessoa1 > idadePessoa2) {
+  console.log(pessoa1.nome + " é mais velho que " + pessoa2.nome)
+}
+else {
+  if (idadePessoa1 < idadePessoa2) {
+    console.log(pessoa2.nome + " é mais velho que " + pessoa1.nome)
+  }
+  else {
+    console.log(pessoa1.nome + " tem a mesma idade que " + pessoa2.nome)
+  }
+}
+8:39
+pessoa.js
+8:39
+let rs = require('readline-sync')
+const diaAtual = 21,
+  mesAtual = 7,
+  anoAtual = 2020
+class Pessoa {
+  constructor(nome, nasc) {
+    this.nome = nome,
+    this.nasc = nasc
+  }
+  getIdade() {
+    let diaNasc = parseInt(this.nasc.substring(0, 2)),
+      mesNasc = parseInt(this.nasc.substring(3, 5)),
+      anoNasc = parseInt(this.nasc.substring(6, 10))
+    if (mesNasc > mesAtual) {
+      return anoAtual - anoNasc - 1
+    }
+    else {
+      if (mesNasc < mesAtual) {
+        return anoAtual - anoNasc
+      }
+      else
+        if (mesNasc == mesAtual && diaNasc > diaAtual) {
+          return anoAtual - anoNasc - 1
+        }
+        else
+          return anoAtual - anoNasc
+    }
+  }
+}
+module.exports = Pessoa;

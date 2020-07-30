@@ -1,0 +1,95 @@
+----------------------------------- Pagina em comunicação com usário----------------
+
+-------------Primeiro passo---------------
+
+  Usuário "Digite nome e usuário";
+     leia (nome,usuário) ; 
+
+       BEM VINDO AO SISTEMA "IMPRESSORA"
+
+       Relate seu problema
+       1 -Atolamento
+       2 -Erro de suprimentos
+       3 -Qualidade de impressão
+       4 -Remanejamento de impressora ou nova instalação
+       5 -Mapear Impressora
+       6 - Outros
+
+
+       ----------------------- 1 Erro atolamento-----------
+
+        Se opção for 1;
+         Tecle 1 para atolamnto traseiro 
+          Escrever "Abra porta traseira ou bandeja e retire papéis atolados  "
+          Tecle 1 para "Solucionado"
+          Tecle 2 para "Erro Persiste"
+
+
+             Se opção for 1 "Obrigado"
+             Se opção for 2 "Iremos direcionar um técnico ao local, seu chamado é INC000000001"
+
+            
+          ----------------------- 2 Erro de suprimentos-----------
+
+
+          Se opção for 2;
+            Escrever "Reinstale cartuchos ";
+             Tecle 1 para "Solucionado"
+             Tecle 2 para "Erro Persiste"
+
+              Se opção for 1 "Obrigado"
+              Se opção for 2 "Iremos direcionar um técnico ao local, seu chamado é INC000000001"
+
+         ---------------------------  3 Qualidade de impressão -------------------------------
+
+               3 -Qualidade de impressão
+
+               Se opção for 3
+                    "Qual o nível de vida útil dos suprimentos? Escreva um valor entre 0 e 100."
+               Ler valor (suprimento)
+                 Se suprimento <=10, escrever "Suprimento em fim da vida útil, realizar a troca"
+                 Se suprimento >10, escrever "Aumentar qualidade de impressão em Menu >Configuração >Qualidade"
+                   Tecle 1 para "Solucionado"
+                   Tecle 2 para "Erro Persiste"
+                 Se opção for 1 "Obrigado"
+                     Se opção for 2 "Iremos direcionar um técnico ao local, seu chamado é INC000000002
+
+
+
+
+
+
+    ------------------------------4 Remanejamento de impressora --------------------
+         
+           Se opção for 4; 
+             Escreva "Informe Bloco e andar"
+              leia()
+
+              Escreva "Técnico direcionado ao local, seu chamado é INC000000001;
+
+
+
+      ----------------------------------------- 5 Mapear Impressora------------------------
+
+              Se opção for 5  
+               Opção 1 
+               Opção 2 
+               Escreva "Informe o Patrimonio do computador Ramal"
+               (lei)
+
+                 Escreva " Técnico entrará em acesso ao seu comutador
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+

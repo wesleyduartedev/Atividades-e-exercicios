@@ -1,0 +1,58 @@
+  -----------------------Atividade impressora, visualizar status ----------------
+  ------------------ Primeiro passo (Software em comunicação com Técnico) --------------------------
+               Técnico
+    Se impressora estiver ligada;
+        prossiga
+
+    Se não; mensagem "erro"
+       Enviar técnico ao local.
+
+ ----------------------------- Segundo passo -------------
+                   
+    Se impressora estiver na rede;
+       verificar suprimentos
+
+    Se não "Mensagem erro" ; 
+
+---------------------------Terceiro passo----------
+
+      Usuário "Digite o end. ip";
+
+     Se ip coreesponder;
+       enviar status de suprimento
+
+      Se não conrresponder;
+         voltar ao primeiro passo
+
+
+------------------ Quarto passo --------------------
+     
+     Se status de (suprimento for <=10) 
+         " Realizar a troca" 
+
+      Se não;
+          prosseguir ao quinto passo
+
+
+---------------------Quinto passo----------------
+
+     Fazer teste de impressão;
+       e Validar com usuário.
+     
+
+
+         
+       
+
+      
+   
+
+              
+
+
+
+ 
+
+     
+      
+   
